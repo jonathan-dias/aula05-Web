@@ -1,0 +1,14 @@
+.menu ul li {
+    list-style: none;
+    float: left;
+}
+
+body {
+    background-image: url("https://static2.wikia.nocookie.net/darkestdungeon/images/5/50/Wiki-background");
+}
+
+.fundo {
+    margin: 0 auto;
+    width: 1500px;
+    background-color: white;
+}
