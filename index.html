@@ -2,10 +2,34 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <object style="float: right" type="text/html" data="menu.html"></object>
 </head>
 
 <body>
+    <nav>
+        <div id="sidenav" class="sidemenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="contato.html">Contato</a>
+            <a href="entrar.html">Entrar</a>
+            <a href="inscrever.html">Inscrever</a>
+        </div>
+    </nav>
+    <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
     <div class="fundo">
 
         <img style="display: block; margin: auto" src="Darkest_Dungeon.webp">
@@ -14,27 +38,104 @@
             <source src="vo_narr_town_backstory_14.wav" type="audio/wav">
         </audio>
 
-        <article>
-            <p>Apesar de ser um RPG, a história é a parte mais irrelevante. Você precisa retornar para as lendárias terras da sua família, onde seu pai jogou uma maldição assustadora. O lugar precisa ser limpo de todo o mal antes que você possa resgatar
-                a sua herança e tesouros.</p>
-            <p>Para fazer isso, você deve contratar e organizar uma trupe de aventureiros que realizarão o "trabalho sujo" e provavelmente vão morrer no processo. Essa é uma das características mais marcantes de Darkest Dungeon, a absoluta falta de misericórdia.
-                Nele, os aventureiros vão morrer. Mas não é só isso, já que, no game, toda morte será permanente e final. Você precisará contratar e treinar um novo aventureiro toda vez que alguém do grupo morrer.</p>
-            <p>O jogo contém 8 heróis:</p>
-            <ul>
-                <li>Plague Doctor</li>
-                <li>Vestal</li>
-                <li>Leper</li>
-                <li>Arbalest</li>
-                <li>Crusader</li>
-                <li>Highwayman</li>
-                <li>Antiquarian</li>
-                <li>Barbarian</li>
-            </ul>
-        </article>
+        <div>
+            <table style="width: 50%; float: left">
+                <tr>
+                    <th>
+                        História
+                    </th>
+                </tr>
+                <td>
+                    Apesar de ser um RPG, a história é a parte mais irrelevante. Você precisa retornar para as lendárias terras da sua famítda, onde seu pai jogou uma maldição assustadora. O lugar precisa ser tdmpo de todo o mal antes que você possa resgatar a sua herança
+                    e tesouros.
+                </td>
+            </table>
 
-        </article>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/h-mXN3akTPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+            <table style="width: 50%; float: left">
+                <tr>
+                    <th>
+                        Personagens
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="collumn">
+                                <img class="image" src="plaguedoctor.png">
+                                <p>Plague Doctor</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="vestal.png">
+                                <p>Vestal</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="leper.png">
+                                <p>Leper</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="arbalest.png">
+                                <p>Arbalest</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="crusader.png">
+                                <p>Crusader</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="highwayman.png">
+                                <p>Highwayman</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="antiquarian.png">
+                                <p>Antiquarian</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="barbarian.png">
+                                <p>Barbarian</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="jester.png">
+                                <p>Jester</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="manatarms.png">
+                                <p>Man-At-Arms</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="occultist.png">
+                                <p>Occultist</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="bountyhunter.png">
+                                <p>Bounty Hunter</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="houndmaster.png">
+                                <p>Houndmaster</p>
+                            </div>
+
+                            <div class="collumn">
+                                <img class="image" src="abomination.png">
+                                <p>Abomination</p>
+                            </div>
+                        </div>
+
+                </tr>
+            </table>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h-mXN3akTPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 </body>
 
 <footer>
