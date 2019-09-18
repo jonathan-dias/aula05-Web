@@ -38,16 +38,24 @@
         <div class="sectioncontent1">
             <div class="boxcontent">
               <div style="background:#290404; border:1px solid #D72402; color:#FFFFFF; font-size:150%; margin-bottom:5px; padding: 1px; text-align:center;">História</div>
-                
-                    Apesar de ser um RPG, a história é a parte mais irrelevante. Você precisa retornar para as lendárias terras da sua famítda, onde seu pai jogou uma maldição assustadora. O lugar precisa ser tdmpo de todo o mal antes que você possa resgatar a sua herança
-                    e tesouros.
-					<audio controls style="padding: 10px">
-						<source src="vo_narr_town_backstory_14.wav" type="audio/wav">
-					</audio>
+                <p>Darkest Dungeon é um RPG desafiante com temática gótica que é sobre os estresses de se aventurar em uma masmorra. Você comanda um grupo de Heróis em uma perigosa descida as masmorras de Hamlet, lidando com inúmeras ameaças à saúde do seu corpo e, pior, ataques implacáveis na saúde mental dos heróis! A quinhentos metros abaixo da terra, você não apenas lutará contra inimigos inimagináveis, mas também fome, doenças e o estresse da escuridão sempre invasora.</p>
+				
+				<p></p>
+				
+				<audio controls style="padding: 10px">
+					<source src="vo_narr_town_backstory_14.wav" type="audio/wav">
+				</audio>
                 
             </div>
 		</div>
-
+	
+		
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
             <div class="sectioncontent2">
 				<div class="boxcontent">
 					<div style="background:#290404; border:1px solid #D72402; color:#FFFFFF; font-size:150%; margin-bottom:5px; padding: 1px; text-align:center;">Personagens</div>
@@ -55,7 +63,8 @@
 					<table style="margin: auto">
 							<div class="row">
 								<div class="collumn">
-									<img class="image" src="plaguedoctor.png">
+									<img style="cursor: pointer;" class="image" value="PLAY" onclick="play()" src="plaguedoctor.png">
+									<audio id="audio" src="vo_narr_town_backstory_14.wav" ></audio>
 									<p>Plague Doctor</p>
 								</div>
 
